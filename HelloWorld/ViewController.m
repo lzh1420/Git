@@ -39,9 +39,19 @@
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [btn setTitle:@"你敢动我试试?" forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:30];
+        btn.layer.borderWidth = 10.0;
+        btn.layer.borderColor = UIColor.redColor.CGColor;
+        btn.layer.cornerRadius = 10.0;
+        btn.layer.masksToBounds = YES;
+        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         btn;
     })];
     
+}
+
+-(void)btnAction:(UIButton *)sender{
+    
+    NSLog(@"你敢动我试试?");
 }
 
 
