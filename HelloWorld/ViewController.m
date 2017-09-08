@@ -18,6 +18,19 @@
     [super viewDidLoad];
 
     NSLog(@"HelloWorld");
+    
+    [self.view addSubview:({
+        UILabel *label = [[UILabel alloc]initWithFrame:(CGRect){0,64,self.view.bounds.size.width,50}];
+        label.backgroundColor = UIColor.redColor;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = UIColor.whiteColor;
+        label.text = @"Hello World";
+        label.layer.cornerRadius = 10.0;
+        label.layer.masksToBounds = YES;
+        label.layer.borderColor = UIColor.greenColor.CGColor;
+        label.layer.borderWidth = 5.0;
+        label;
+    })];
 }
 
 
