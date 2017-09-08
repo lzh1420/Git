@@ -31,6 +31,17 @@
         label.layer.borderWidth = 5.0;
         label;
     })];
+    
+    [self.view addSubview:({
+        UIButton *btn =[UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = (CGRect){0,150,self.view.bounds.size.width,50};
+        btn.backgroundColor = UIColor.greenColor;
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [btn setTitle:@"你敢动我试试?" forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:30];
+        btn;
+    })];
+    
 }
 
 
