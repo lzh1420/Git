@@ -47,6 +47,12 @@
         btn;
     })];
     
+    [self.view addSubview:({
+        UIView *view = [[UIView alloc]initWithFrame:(CGRect){(self.view.bounds.size.width-200)/2,300,200,200}];
+        view.backgroundColor = [UIColor purpleColor];
+        view;
+    })];
+    
 }
 
 -(void)btnAction:(UIButton *)sender{
