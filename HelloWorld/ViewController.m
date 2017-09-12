@@ -18,6 +18,7 @@
     [super viewDidLoad];
 
     NSLog(@"HelloWorld");
+    NSLog(@"这是一个测试");
     
     [self.view addSubview:({
         UILabel *label = [[UILabel alloc]initWithFrame:(CGRect){0,64,self.view.bounds.size.width,50}];
