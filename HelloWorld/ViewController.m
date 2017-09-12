@@ -49,11 +49,11 @@
     
     [self.view addSubview:({
         UIView *view = [[UIView alloc]initWithFrame:(CGRect){(self.view.bounds.size.width-200)/2,300,200,200}];
-        view.backgroundColor = [UIColor orangeColor];
+        view.backgroundColor = [UIColor purpleColor];
         view.layer.cornerRadius = 100.0;
         view.layer.masksToBounds = YES;
         view.layer.borderWidth = 10.0;
-        view.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        view.layer.borderColor = [UIColor redColor].CGColor;
         view;
     })];
     
